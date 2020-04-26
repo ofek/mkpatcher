@@ -27,6 +27,7 @@
     ```yaml
     ...
     markdown_extensions:
+      ...
       - mkpatcher:
           ...
     ```
@@ -44,6 +45,7 @@ You can modify the lines directly:
 ```yaml
 ...
 markdown_extensions:
+  ...
   - mkpatcher:
       script: |
         lines.extend(('', 'some footer', ''))
@@ -66,6 +68,14 @@ markdown_extensions:
 The `location` option takes a path to either a single Python file or a directory containing multiple Python files.
 If the location refers to a directory, the scripts will be loaded and eventually executed in lexicographical order
 based on file names.
+
+```yaml
+...
+markdown_extensions:
+  ...
+  - mkpatcher:
+      location: docs/.scripts
+```
 
 Each script must define a callable object named `patch` that accepts a single parameter which will be the Markdown lines.
 
