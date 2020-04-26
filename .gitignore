@@ -1,0 +1,14 @@
+*.log
+*.pyc
+/.cache
+/.coverage
+/.eggs
+/.idea
+/.tox
+/.vscode
+/build
+/dist
+/mkpatcher.egg-info
+/pip-wheel-metadata
+/site
+/wheelhouse
