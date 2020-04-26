@@ -58,8 +58,9 @@ class PatcherPreprocessor(Preprocessor):
                 self.scripts.append(LoadedScript(self.location))
             elif os.path.isdir(self.location):
                 for entry in sorted(os.listdir(self.location)):
-                    if os.path.isfile(entry):
-                        self.scripts.append(LoadedScript(os.path.join(self.location, entry)))
+                    path = os.path.join(self.location, entry)
+                    if os.path.isfile(path):
+                        self.scripts.append(LoadedScript(path))
             else:
                 log.error('Unable to load script(s) from %s', self.location)
 

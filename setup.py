@@ -30,7 +30,7 @@ setup(
     author_email='ofekmeister@gmail.com',
     license='Apache-2.0 OR MIT',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'License :: OSI Approved :: Apache Software License',
         'License :: OSI Approved :: MIT License',
